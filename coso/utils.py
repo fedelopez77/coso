@@ -34,5 +34,5 @@ def count_freqs(data):
     return freqs
 
 
-def order_freqs(freqs):
-    return sorted(freqs.items(), key=itemgetter(1), reverse=True)
+def order_freqs(freqs, reverse=True):
+    return sorted(freqs.items(), key=itemgetter(1), reverse=reverse)
