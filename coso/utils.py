@@ -16,6 +16,11 @@ def export_jsonl(path, data):
             fp.write(json.dumps(res) + "\n")
 
 
+def load_json(path):
+    with open(path, "r") as f:
+        return json.load(f)
+
+
 def load(path):
     with open(path, "r", buffering=BUFFER_SIZE) as f:
         return f.readlines()
